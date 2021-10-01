@@ -43,6 +43,7 @@ header {
   background: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .menu-bars i {
@@ -64,6 +65,10 @@ main {
 }
 
 #intro {
+  background-image: url('../media/svg/icon.svg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
   padding: 10%;
   padding-bottom: 20vh;
 }
@@ -429,6 +434,7 @@ textarea {
   }
 
   .desktop-icon {
+    z-index: 0;
     display: block;
     height: 50%;
   }
@@ -438,6 +444,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url('../media/svg/desktop-icon.svg');
   }
 
   .menu-bars {
