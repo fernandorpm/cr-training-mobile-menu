@@ -11,35 +11,40 @@
   <body>
     <header>
       <h1 id="logo">Aziz Mejri</h1>
-      <button type="button" class="menu-bars">
+      <button type="button" id="open-menu-mobile" onclick="openMenuMobile()">
         <i class="fas fa-bars"></i>
       </button>
+
+      <nav id="mobile-nav">
+        <button type="button" id="close-menu-mobile" onclick="closeMenuMobile()">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-link-list">
+          <li><a class="mobile-nav-link" href="#projects">Portoflio</a></li>
+          <li><a class="mobile-nav-link" href="#about-me">About</a></li>
+          <li>
+            <a class="mobile-nav-link" href="#contact">
+              Contact <i class="far fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
       <nav id="desktop-nav">
         <ul>
           <li><a class="nav-link" href="#projects">Portoflio</a></li>
           <li><a class="nav-link" href="#about-me">About</a></li>
           <li>
-            <a class="nav-link" href="#contact"
-              >Contact <i class="far fa-envelope"></i
-            ></a>
+            <a class="nav-link" href="#contact">
+              Contact <i class="far fa-envelope"></i>
+            </a>
           </li>
         </ul>
       </nav>
+
     </header>
     <main>
       <div id="intro">
-        <div class="intro-icon">
-          <img
-            class="mobile-icon"
-            src="./media/svg/icon.svg"
-            alt="Icon for the side"
-          />
-          <img
-            class="desktop-icon"
-            src="./media/svg/desktop-icon.svg"
-            alt="Icon for the side"
-          />
-        </div>
         <h2 class="intro-greet">
           Hey There.
           <br />
@@ -442,5 +447,6 @@
       src="https://kit.fontawesome.com/e966a3bd22.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="./scripts/main.js"></script>
   </body>
 </html>
